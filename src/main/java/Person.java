@@ -102,7 +102,7 @@ public class Person {
         }
 
         public Person build() {
-            if (name == null | surname == null | age < 0 | address == null) {
+            if (name == null | surname == null) {
                 throw new IllegalArgumentException("Please provide valid arguments.");
             }
             return new Person(name, surname, age, address);
